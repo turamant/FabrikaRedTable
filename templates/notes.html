@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <title>Notes_</title>
+</head>
+<body>
+{% for note in notes %}
+    <div class="btn btn-success btn-lg">
+        <p>{{ note.id }}</p>
+        <p>{{ note.name }}</p>
+        <p>{{ note.family }}</p>
+        <p>{{ note.title }}</p>
+    </div>
+{% endfor %}
+</body>
+</html>
