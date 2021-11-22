@@ -10,4 +10,4 @@ class Note(models.Model):
 
     def full_name(self):
         #Вычисляемое поле full_name
-        return ' '.join([self.family,self.name]).capitalize()
+        return ' '.join([self.family, self.name]).capitalize()
